@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:theme="@style/AppTheme"
+    android:background="@android:color/background_dark">
+
+
+
+    <TextView
+        android:text="TextView"
+        android:id="@+id/grid_text"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_light"
+        android:layout_height="50dp"
+        android:textStyle="normal|bold"
+        android:layout_width="170dp" />
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_background"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"></ImageView>
+
+</LinearLayout>

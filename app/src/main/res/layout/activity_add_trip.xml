@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context="com.example.pranav.expensemanager2.AddTripActivity">
+
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp">
+        <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:text="Enter Trip details"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="90dp"
+                android:ems="10"
+                android:hint="From"
+                android:inputType="text"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/from"
+                android:layout_alignStart="@+id/from"
+                android:layout_below="@+id/from"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Number of People"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/from"
+                android:layout_alignStart="@+id/from"
+                android:layout_below="@+id/number"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Destination"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/destination"
+                android:layout_alignStart="@+id/destination"
+                android:layout_below="@+id/destination"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:onClick="opencalender1"
+                android:hint="Start Date"
+                android:inputType="date"
+                />
+
+
+            <EditText
+                android:id="@+id/endDate"
+                android:onClick="opencalender2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/startDate"
+                android:layout_alignStart="@+id/startDate"
+                android:layout_below="@+id/startDate"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="End Date"
+                android:inputType="date"
+                />
+
+            <EditText
+                android:id="@+id/approvedBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/endDate"
+                android:layout_alignStart="@+id/endDate"
+                android:layout_below="@+id/endDate"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Approved Budget"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="18dp"
+                android:onClick="insertrecord"
+                android:layout_below="@+id/approvedBudget"
+                android:text="Submit details"
+                android:textColor="@color/colorPrimary" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

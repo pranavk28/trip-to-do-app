@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExpenseManager2</string>
+    <string name="title_activity_view_trip">ViewTripActivity</string>
+    <string name="title_activity_report">ReportActivity</string>
+</resources>
